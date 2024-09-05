@@ -3,7 +3,7 @@ import axios from "axios";
 import "../styles/RegisterTeamPage.css"; // Ensure you create this CSS file
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
-import image from "../registrationform-1.jpg";
+import image from "../../public/registrationform-1.jpg";
 const RegisterTeamPage = () => {
   const [teamName, setTeamName] = useState("");
   const [feedback, setFeedback] = useState("");
