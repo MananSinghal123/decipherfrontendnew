@@ -4,8 +4,9 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios for making HTTP requests
 import "./DecipherPage.css"; // Make sure to create this CSS file
 import Footer from "./Footer";
-import image from "../timecapsule.gif";
-import image2 from "../satoshi.jpg";
+import image from "/timecapsule.gif";
+import image2 from "/satoshi.jpg";
+
 export const DecipherPage = () => {
   const [userInput, setUserInput] = useState(""); // State to manage user input
   const [feedback, setFeedback] = useState(""); // State to manage feedback messages
@@ -85,36 +86,35 @@ export const DecipherPage = () => {
       </header>
 
       <div className="decipher-intro">
-      
-      <div >
-        <img className="image2a" src={image2} alt="" />
-      </div>
-          
-        <p className="paragraph"> 
-        <h3>#Fact</h3>
-          <i>
-          <p>Satoshi Nakamoto laid the foundation of Blockchain using the already existing techniques such as Distributed Systems, Cryptography, etc.</p> 
-          <p>
-          Bitcoin (BTC, native Cryptocurrency) is the north star of the Chain.
-          </p>
-          
-          </i>
+        <div>
+          <img className="image2a" src={image2} alt="" />
+        </div>
 
-     
+        <p className="paragraph">
+          <h3>#Fact</h3>
+          <i>
+            <p>
+              Satoshi Nakamoto laid the foundation of Blockchain using the
+              already existing techniques such as Distributed Systems,
+              Cryptography, etc.
+            </p>
+            <p>
+              Bitcoin (BTC, native Cryptocurrency) is the north star of the
+              Chain.
+            </p>
+          </i>
         </p>
       </div>
 
       <section className="decipher-puzzle">
         <h1>Puzzle #1</h1>
-        <img
-          src={image}
-          alt="Time Capsule"
-          className="time-capsule-image"
-        />
+        <img src={image} alt="Time Capsule" className="time-capsule-image" />
         <p className="puzzle-text">
-          <b> TODO:</b> Shift each glyph to where shadows linger, thrice removed from the light, and the secret will reveal itself.
+          <b> TODO:</b> Shift each glyph to where shadows linger, thrice removed
+          from the light, and the secret will reveal itself.
           <br />
-          <b>Hint:</b> “History Always Wins, <b>Reading</b> Power is your best friend!”
+          <b>Hint:</b> “History Always Wins, <b>Reading</b> Power is your best
+          friend!”
           <br />
           <br />
           The phrase is: <b>ZKLWHSDSHU </b>
@@ -135,8 +135,6 @@ export const DecipherPage = () => {
         </div>
         {feedback && <p className="feedback-message">{feedback}</p>}
       </section>
-
-      
 
       <div className="decipher-footer">
         <Footer></Footer>

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import "./CaesarCipherPage.css"; // Ensure you create this CSS file
 import Footer from "./Footer";
+
 const OptionalQuestion = () => {
   const [userInput, setUserInput] = useState("");
   const [feedback, setFeedback] = useState("");

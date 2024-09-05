@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./CaesarCipherPage.css"; // Ensure you create this CSS file
 import axios from "axios"; // Import axios
 import Footer from "./Footer";
-import poem from "../poem.gif"
+import poem from "/poem.gif";
+
 const CaesarCipherPage = () => {
   const [userInput, setUserInput] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -75,7 +76,9 @@ const CaesarCipherPage = () => {
         </section>
 
         <section className="caesar-puzzle">
-          <p className="cipher-text">गूगल आंकड़े दे सकता है, ज्ञान नहीं; but Google FTW!</p>
+          <p className="cipher-text">
+            गूगल आंकड़े दे सकता है, ज्ञान नहीं; but Google FTW!
+          </p>
           <div className="input-section">
             <label htmlFor="cipherInput">Enter the name:</label>
             <input

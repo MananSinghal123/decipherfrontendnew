@@ -3,6 +3,7 @@ import "./MorseCodeVideoPage.css"; // Ensure you create this CSS file
 import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import Footer from "./Footer";
+
 const MorseCodeVideoPage = () => {
   const [decodedMessage, setDecodedMessage] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -61,9 +62,11 @@ const MorseCodeVideoPage = () => {
         </header>
 
         <section className="morse-code-intro">
-        <h3>Puzzle #9</h3>
+          <h3>Puzzle #9</h3>
           <p>
-          In the silent ballet of coded light, observe the pattern within the night. <br /> With careful gaze and patient ear, the message hidden will soon appear.
+            In the silent ballet of coded light, observe the pattern within the
+            night. <br /> With careful gaze and patient ear, the message hidden
+            will soon appear.
             <br />
             <a
               target="_blank"
@@ -78,8 +81,8 @@ const MorseCodeVideoPage = () => {
         <section className="morse-code-puzzle">
           {/* Replace 'video.mp4' with the actual video file path */}
           <iframe
-          width="50%"
-          height="50%"
+            width="50%"
+            height="50%"
             // width="560"
             // height="315"
             src="https://www.youtube.com/embed/WTx_L2r4JlA?si=VmMAAaomQ-2N1i6r"
@@ -111,11 +114,10 @@ const MorseCodeVideoPage = () => {
 
           {feedback && <p className="feedback-message">{feedback}</p>}
         </section>
-      
-      <div className="morse-code-footer">
-        <Footer></Footer>
-      </div>
-        
+
+        <div className="morse-code-footer">
+          <Footer></Footer>
+        </div>
       </div>
     );
   } else {

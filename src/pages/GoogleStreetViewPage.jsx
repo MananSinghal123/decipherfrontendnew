@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import "./GoogleStreetViewPage.css"; // Ensure you create this CSS file
 import Footer from "./Footer";
+
 const GoogleStreetViewPage = () => {
   const [userInput, setUserInput] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -62,9 +63,11 @@ const GoogleStreetViewPage = () => {
         </header>
 
         <section className="streetview-intro">
-        <h3>Puzzle #7</h3>
+          <h3>Puzzle #7</h3>
           <p>
-          Where neon dreams and glimmers play, find the sign that lights the way. <br /> In the shadow of fame’s bright glare, the truth awaits if you dare to stare.  
+            Where neon dreams and glimmers play, find the sign that lights the
+            way. <br /> In the shadow of fame’s bright glare, the truth awaits
+            if you dare to stare.
           </p>
         </section>
 

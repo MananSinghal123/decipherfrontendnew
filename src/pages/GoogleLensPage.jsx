@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import "./GoogleLensPage.css"; // Ensure you create this CSS file
 import Footer from "./Footer";
+
 const GoogleLensPage = () => {
   const [userInput, setUserInput] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -65,7 +66,7 @@ const GoogleLensPage = () => {
         </header>
 
         <section className="googlelens-intro">
-        <h3>Puzzle #6</h3>
+          <h3>Puzzle #6</h3>
           <p>
             The final piece of the puzzle lies hidden in an image. Use Google
             Lens to uncover the hidden message. This step symbolizes the need

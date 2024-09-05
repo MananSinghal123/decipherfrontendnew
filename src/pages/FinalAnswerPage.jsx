@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios"; // Import axios for making HTTP requests
 import "./FinalAnswerPage.css"; // Ensure you create this CSS file
 import Footer from "./Footer";
+
 const FinalAnswerPage = () => {
   const [userInput, setUserInput] = useState(""); // State to manage user input
   const [feedback, setFeedback] = useState(""); // State to manage feedback messages
@@ -15,7 +16,7 @@ const FinalAnswerPage = () => {
 
   useEffect(() => {
     // Check if the user has completed all tasks (up to the required last task)
-    if (lastTaskState <10) {
+    if (lastTaskState < 10) {
       setFeedback(
         "You have not completed all required tasks to access the final answer page."
       );
@@ -58,7 +59,7 @@ const FinalAnswerPage = () => {
   };
 
   // Conditional rendering based on lastTaskState
-  if (lastTaskState <10) {
+  if (lastTaskState < 10) {
     // If the user has not completed the required tasks, show a message
     return (
       <div className="finalanswer-container">
@@ -77,13 +78,12 @@ const FinalAnswerPage = () => {
   return (
     <div className="finalanswer-container">
       <header className="finalanswer-header">
-
         <h1>The Final Answer Revealed</h1>
         <h2>The answer was hidden in plain sight all along!</h2>
       </header>
 
       <section className="finalanswer-intro">
-      <h3>Puzzle #11</h3>
+        <h3>Puzzle #11</h3>
         <p>
           The final revelation is that the answer was the event name all along!
           But what is the question you may ask? Maybe you'll find what you seek

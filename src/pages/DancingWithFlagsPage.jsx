@@ -62,9 +62,11 @@ const DancingWithFlagsPage = () => {
         </header>
 
         <section className="flags-intro">
-        <h3>Puzzle #8</h3>
+          <h3>Puzzle #8</h3>
           <p>
-          With colors swirling in a dance so grand, the signals speak where flags command. <br /> Decode their rhythm in the signal’s flight, and hidden messages will come to light.
+            With colors swirling in a dance so grand, the signals speak where
+            flags command. <br /> Decode their rhythm in the signal’s flight,
+            and hidden messages will come to light.
           </p>
         </section>
 

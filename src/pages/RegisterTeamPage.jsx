@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./RegisterTeamPage.css"; // Ensure you create this CSS file
+import "../styles/RegisterTeamPage.css"; // Ensure you create this CSS file
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import image from "../registrationform-1.jpg";
@@ -16,9 +16,12 @@ const RegisterTeamPage = () => {
     setFeedback("");
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_CORRECT_BACKENDURL}/api/teams`, {
-        teamName,
-      });
+      const response = await axios.post(
+        `${import.meta.env.VITE_CORRECT_BACKENDURL}/api/teams`,
+        {
+          teamName,
+        }
+      );
       console.log(response.status);
       if (response.status === 201) {
         // Set localStorage values

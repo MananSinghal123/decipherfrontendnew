@@ -3,6 +3,7 @@ import "./LLMChatbotPage.css"; // Ensure you create this CSS file
 import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import Footer from "./Footer";
+
 const LLMChatbotPage = () => {
   const [chatLog, setChatLog] = useState([]);
   const [userInput, setUserInput] = useState("");

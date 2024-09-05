@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import "./DistortedImagePage.css"; // Ensure you create this CSS file
 import Footer from "./Footer";
+
 const DistortedImagePage = () => {
   const [userInput, setUserInput] = useState("");
   const [feedback, setFeedback] = useState("");

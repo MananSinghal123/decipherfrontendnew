@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./BinaryIPAddressPage.css"; // Ensure you create this CSS file
 import axios from "axios"; // Import axios
 import Footer from "./Footer";
-import onof from "../onoff.gif"
+import onof from "/onoff.gif";
 
 const BinaryIPAddressPage = () => {
   const [userInput, setUserInput] = useState("");
@@ -17,7 +17,7 @@ const BinaryIPAddressPage = () => {
   // The correct answer after decoding the binary IP address
   const correctIPAddress = import.meta.env.VITE_CORRECT_IP_ADDRESS;
 
- // Replace with your own binary encoded IP address equivalent
+  // Replace with your own binary encoded IP address equivalent
 
   const checkIPAddress = async () => {
     if (userInput === correctIPAddress) {
@@ -66,15 +66,16 @@ const BinaryIPAddressPage = () => {
             <img src={onof} alt="" />
           </div>
           <p>
-          Amidst the endless code of ones and zeroes, truth emerges in the space between. <br /> 
-          Trust the pattern to unveil what hides in plain sight.
+            Amidst the endless code of ones and zeroes, truth emerges in the
+            space between. <br />
+            Trust the pattern to unveil what hides in plain sight.
           </p>
         </section>
 
         <section className="binary-ip-puzzle">
           <h3>Puzzle #3</h3>
           <p className="binary-hint">
-             <b>DECIPHER</b> THIS : 1111111.0000000.0000000.0000001
+            <b>DECIPHER</b> THIS : 1111111.0000000.0000000.0000001
           </p>
           <div className="input-section">
             <label htmlFor="ipInput">Enter the Decoded IP :</label>

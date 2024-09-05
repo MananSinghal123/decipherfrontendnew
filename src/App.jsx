@@ -17,23 +17,23 @@ import Brainfuck from "./pages/Brainfuck";
 import LeaderboardPage from "./pages/LeaderboardPage";
 import RegisterTeamPage from "./pages/RegisterTeamPage";
 import DisableBackNavigation from "./DisableBackNavigation";
-import OptionalQuestion from "./pages/OptionalQuestion";
+// import OptionalQuestion from "./pages/OptionalQuestion";
 
-import "./pages/BinaryIPAddressPage.css";
-import "./pages/CaesarCipherPage.css";
-import "./pages/CaesarCipherPage.css";
-import "./pages/DancingWithFlagsPage.css";
-import "./pages/DistortedImagePage.css";
-import "./pages/FinalAnswerPage.css";
-import "./pages/GoogleLensPage.css";
-import "./pages/GoogleStreetViewPage.css";
-import "./pages/LeaderboardPage.css";
-import "./pages/LLMChatbotPage.css";
-import "./pages/LocationHuntPage.css";
-import "./pages/MorseCodeVideoPage.css";
-import "./pages/CaesarCipherPage.css";
-import "./pages/RegisterTeamPage.css";
-import "./pages/RulesPage.css";
+// import "./pages/BinaryIPAddressPage.css";
+// import "./pages/CaesarCipherPage.css";
+// import "./pages/CaesarCipherPage.css";
+// import "./pages/DancingWithFlagsPage.css";
+// import "./pages/DistortedImagePage.css";
+// import "./pages/FinalAnswerPage.css";
+// import "./pages/GoogleLensPage.css";
+// import "./pages/GoogleStreetViewPage.css";
+// import "./pages/LeaderboardPage.css";
+// import "./pages/LLMChatbotPage.css";
+// import "./pages/LocationHuntPage.css";
+// import "./pages/MorseCodeVideoPage.css";
+// import "./pages/CaesarCipherPage.css";
+// import "./pages/RegisterTeamPage.css";
+// import "./pages/RulesPage.css";
 
 function App() {
   return (

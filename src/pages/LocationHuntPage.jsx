@@ -3,7 +3,8 @@ import "./LocationHuntPage.css"; // Ensure you create this CSS file
 import { useNavigate } from "react-router-dom";
 import axios from "axios"; // Import axios
 import Footer from "./Footer";
-import image2 from "../satoshinaka.jpg"
+import image2 from "/satoshinaka.jpg";
+
 const LocationHuntPage = () => {
   const [selectedLocation, setSelectedLocation] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -64,22 +65,21 @@ const LocationHuntPage = () => {
         </header>
 
         <div className="location-hunt-intro">
-
           <div>
             <img src={image2} alt="" />
           </div>
           <p>
-          Known for anonymity & intractability, yet left a trail of cues behind. 
-<br />
-Find his history there, to make your history here.
+            Known for anonymity & intractability, yet left a trail of cues
+            behind.
+            <br />
+            Find his history there, to make your history here.
           </p>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           >
-            Don't click on it. Our developers
-            just wanted to be funny. 🙄
+            Don't click on it. Our developers just wanted to be funny. 🙄
           </a>
         </div>
 
@@ -88,8 +88,8 @@ Find his history there, to make your history here.
           <p className="puzzle-hint">
             "TO FIND: <span id="apla">A Place.</span>
             <br />
-            
-Hint: Relates Mr. Nakamoto to the world. A peaceful, yet bombastic place.."
+            Hint: Relates Mr. Nakamoto to the world. A peaceful, yet bombastic
+            place.."
           </p>
 
           <div className="location-select">
@@ -112,7 +112,6 @@ Hint: Relates Mr. Nakamoto to the world. A peaceful, yet bombastic place.."
               <option value="mittal kallej">Mittal Kalej</option>
               <option value="mittal kallej">Shanghai</option>
               <option value="mittal kallej">Singapore</option>
-
             </select>
             <button type="button" onClick={checkLocation}>
               Submit
