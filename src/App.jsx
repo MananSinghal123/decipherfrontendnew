@@ -14,9 +14,9 @@ import RulesPage from "./pages/RulesPage";
 
 import Brainfuck from "./pages/Brainfuck";
 
-import LeaderboardPage from "./pages/LeaderboardPage";
-import RegisterTeamPage from "./pages/RegisterTeamPage";
-import DisableBackNavigation from "./DisableBackNavigation";
+import LeaderboardPage from "./pages/LeaderboardPage.jsx";
+import RegisterTeamPage from "./pages/RegisterTeamPage.jsx";
+import DisableBackNavigation from "./DisableBackNavigation.jsx";
 // import OptionalQuestion from "./pages/OptionalQuestion";
 
 // import "./pages/BinaryIPAddressPage.css";
